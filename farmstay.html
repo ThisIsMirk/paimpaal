@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Paimpaal Farmstay — A hilltop cottage and tent with stunning views. Wake up to misty mountains and farm-fresh breakfast.">
+  <title>Farmstay — Paimpaal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="header__logo">
+        <img src="images/green_logo.png" alt="Paimpaal" width="120" height="40">
+      </a>
+      <nav class="header__nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="farmstay.html">Farmstay</a>
+        <a href="about.html">About</a>
+      </nav>
+      <button class="header__hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Farmstay Hero -->
+  <section class="hero">
+    <img src="images/tent_scenery.jpeg" alt="View from the farmstay tent at sunset" class="hero__bg" loading="eager">
+    <div class="hero__content">
+      <h1>Stay at the Farm</h1>
+      <p>A hilltop getaway with misty mountain views, fresh air, and farm-to-table meals.</p>
+      <button class="btn btn--whatsapp" onclick="openWhatsApp('Farmstay', 'Hi! I\'m interested in booking a stay at Paimpaal farmstay.')">Book via WhatsApp</button>
+    </div>
+  </section>
+
+  <!-- Accommodation Options -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <h2>Where You'll Stay</h2>
+        <p>Choose between our cozy cottage or the hilltop tent — both with views that'll take your breath away.</p>
+      </div>
+
+      <div class="quick-links">
+        <!-- Cottage -->
+        <div class="farmstay-hero">
+          <img src="images/cottage_outside1.jpg" alt="Paimpaal cottage exterior" class="farmstay-hero__bg" loading="lazy">
+          <div class="farmstay-hero__content">
+            <h2>The Cottage</h2>
+            <p>A comfortable stay with modern amenities, surrounded by the farm's greenery and red-earth charm.</p>
+            <button class="btn btn--whatsapp btn--sm" onclick="openWhatsApp('Farmstay Cottage', 'Hi! I\'d like to book the cottage at Paimpaal.')">Inquire About Cottage</button>
+          </div>
+        </div>
+
+        <!-- Tent -->
+        <div class="farmstay-hero">
+          <img src="images/hut.jpg" alt="Paimpaal hilltop tent" class="farmstay-hero__bg" loading="lazy">
+          <div class="farmstay-hero__content">
+            <h2>The Tent</h2>
+            <p>Perched on the hilltop with panoramic views — wake up to sunrises over the Western Ghats.</p>
+            <button class="btn btn--whatsapp btn--sm" onclick="openWhatsApp('Farmstay Tent', 'Hi! I\'d like to book the hilltop tent at Paimpaal.')">Inquire About Tent</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <h2>Gallery</h2>
+        <p>A glimpse of life at the farmstay.</p>
+      </div>
+      <div class="gallery-grid">
+        <img src="images/cottage_outside1.jpg" alt="Cottage exterior with potted plants along red dirt road" loading="lazy" data-lightbox>
+        <img src="images/cottage_indoor.jpg" alt="Cottage interior" loading="lazy" data-lightbox>
+        <img src="images/tent_outside.jpeg" alt="Tent on the hilltop" loading="lazy" data-lightbox>
+        <img src="images/tent_scenery.jpeg" alt="Sunset view from the tent" loading="lazy" data-lightbox>
+        <img src="images/hut.jpg" alt="Rustic farmstay hut" loading="lazy" data-lightbox>
+        <img src="images/farm_top.jpeg" alt="Aerial view of the farm" loading="lazy" data-lightbox>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <h2>Amenities</h2>
+        <p>Everything you need for a comfortable farm getaway.</p>
+      </div>
+      <ul class="amenities-list">
+        <li><span class="icon">&#127749;</span> Scenic hilltop views</li>
+        <li><span class="icon">&#127860;</span> Farm-fresh breakfast</li>
+        <li><span class="icon">&#128004;</span> Farm tour included</li>
+        <li><span class="icon">&#128507;</span> Parking available</li>
+        <li><span class="icon">&#127795;</span> Nature walks and trails</li>
+        <li><span class="icon">&#9749;</span> Tea/coffee on arrival</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Details -->
+  <section>
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Ready to visit?</h2>
+        <p>Send us a message to check availability and pricing. We'd love to host you!</p>
+        <button class="btn btn--whatsapp" onclick="openWhatsApp('Farmstay', 'Hi! I\'d like to book a stay at Paimpaal farmstay. Could you share availability and pricing?')">Book via WhatsApp</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox__close" aria-label="Close">&times;</button>
+    <img src="" alt="">
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__contact">
+        <strong>Paimpaal Farm</strong>
+        <span>Location TBD</span>
+        <a href="#" onclick="openWhatsApp('', 'Hi! I have a question about Paimpaal.'); return false;">WhatsApp Us</a>
+      </div>
+      <div class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="farmstay.html">Farmstay</a>
+        <a href="about.html">About</a>
+      </div>
+      <div class="footer__copy">
+        &copy; 2026 Paimpaal. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

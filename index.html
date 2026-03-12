@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Paimpaal — Fresh farm products and hilltop farmstay in India. Dairy, produce, fruits, spices, and a scenic cottage getaway.">
+  <title>Paimpaal — Farm Fresh Products & Farmstay</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="header__logo">
+        <img src="images/green_logo.png" alt="Paimpaal" width="120" height="40">
+      </a>
+      <nav class="header__nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="farmstay.html">Farmstay</a>
+        <a href="about.html">About</a>
+      </nav>
+      <button class="header__hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="images/farm_top.jpeg" alt="Aerial view of Paimpaal farm" class="hero__bg" loading="eager">
+    <div class="hero__content">
+      <h1>Welcome to Paimpaal</h1>
+      <p>Fresh from our hilltop farm to your table. Dairy, produce, fruits, spices — and a farmstay with views you won't forget.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="products.html" class="btn btn--primary">Our Products</a>
+        <a href="farmstay.html" class="btn btn--outline">Stay With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Links -->
+  <section>
+    <div class="container">
+      <div class="quick-links">
+        <a href="products.html" class="quick-link">
+          <img src="images/milk.jpg" alt="Farm products" loading="lazy">
+          <div class="quick-link__overlay">
+            <h3>Farm Products</h3>
+            <p>Dairy, produce, fruits & spices — straight from the farm.</p>
+            <span class="btn btn--primary btn--sm">Browse Products</span>
+          </div>
+        </a>
+        <a href="farmstay.html" class="quick-link">
+          <img src="images/tent_scenery.jpeg" alt="Farmstay with scenic views" loading="lazy">
+          <div class="quick-link__overlay">
+            <h3>Farmstay</h3>
+            <p>A hilltop cottage and tent with stunning sunset views.</p>
+            <span class="btn btn--primary btn--sm">Learn More</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <h2>From Our Farm</h2>
+        <p>A taste of what we grow and make at Paimpaal.</p>
+      </div>
+      <div class="featured-grid">
+        <div class="card">
+          <img src="images/ghee.jpg" alt="Fresh ghee" class="card__img" loading="lazy">
+          <div class="card__body">
+            <h3>Ghee</h3>
+            <p>Pure, homemade cow's milk ghee.</p>
+            <button class="btn btn--whatsapp btn--sm" onclick="openWhatsApp('Ghee')">Order on WhatsApp</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/avocado.jpg" alt="Fresh avocados" class="card__img" loading="lazy">
+          <div class="card__body">
+            <h3>Avocado</h3>
+            <p>Farm-grown, hand-picked avocados.</p>
+            <button class="btn btn--whatsapp btn--sm" onclick="openWhatsApp('Avocados')">Order on WhatsApp</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/black_pepper.jpeg" alt="Black pepper" class="card__img" loading="lazy">
+          <div class="card__body">
+            <h3>Black Pepper</h3>
+            <p>Sun-dried, aromatic black pepper.</p>
+            <button class="btn btn--whatsapp btn--sm" onclick="openWhatsApp('Black Pepper')">Order on WhatsApp</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/eggs.jpg" alt="Fresh eggs" class="card__img" loading="lazy">
+          <div class="card__body">
+            <h3>Eggs</h3>
+            <p>Free-range farm-fresh eggs.</p>
+            <button class="btn btn--whatsapp btn--sm" onclick="openWhatsApp('Eggs')">Order on WhatsApp</button>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-2">
+        <a href="products.html" class="btn btn--outline-green">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Want to order?</h2>
+        <p>Just send us a message on WhatsApp — we'll get back to you right away.</p>
+        <button class="btn btn--whatsapp" onclick="openWhatsApp('', 'Hi! I\'d like to know more about Paimpaal products.')">Chat on WhatsApp</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__contact">
+        <strong>Paimpaal Farm</strong>
+        <span>Location TBD</span>
+        <a href="#" onclick="openWhatsApp('', 'Hi! I have a question about Paimpaal.'); return false;">WhatsApp Us</a>
+      </div>
+      <div class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="farmstay.html">Farmstay</a>
+        <a href="about.html">About</a>
+      </div>
+      <div class="footer__copy">
+        &copy; 2026 Paimpaal. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

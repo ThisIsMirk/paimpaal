@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Paimpaal — Our story, our farm, and the quality we stand behind. Lab-tested, newspaper-featured, farm-fresh.">
+  <title>About — Paimpaal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="header__logo">
+        <img src="images/green_logo.png" alt="Paimpaal" width="120" height="40">
+      </a>
+      <nav class="header__nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="farmstay.html">Farmstay</a>
+        <a href="about.html">About</a>
+      </nav>
+      <button class="header__hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Paimpaal</h1>
+      <p>Our story, our farm, and the quality we stand behind.</p>
+    </div>
+  </section>
+
+  <!-- Farm Story -->
+  <section>
+    <div class="container">
+      <div class="about-intro">
+        <div>
+          <h2>Our Story</h2>
+          <p class="mt-1">Paimpaal is a family-run farm nestled in the hills of India. What started as a passion for sustainable farming has grown into a thriving homestead producing fresh dairy, seasonal produce, tropical fruits, and aromatic spices.</p>
+          <p class="mt-1">We believe in doing things the right way — no shortcuts, no chemicals, just honest farming. Every product that leaves our farm is something we'd proudly serve at our own table.</p>
+          <p class="mt-1">Beyond the farm, we opened our doors to guests who want to experience the beauty of rural life. Our hilltop farmstay offers a peaceful escape with views of the Western Ghats that you have to see to believe.</p>
+        </div>
+        <img src="images/farm_top.jpeg" alt="Aerial view of Paimpaal farm" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- The Cow -->
+  <section>
+    <div class="container">
+      <div class="about-intro" style="direction: rtl;">
+        <div style="direction: ltr;">
+          <h2>Meet Mujika</h2>
+          <p class="mt-1">The heart (and stomach) of the farm. Mujika and her friends provide the fresh milk that goes into our dairy products — from creamy yogurt to golden ghee.</p>
+          <p class="mt-1">They graze freely on the farm's lush hilltop pastures, and in return, they give us the best milk you'll ever taste.</p>
+        </div>
+        <img src="images/mujikaaaa.jpg" alt="Mujika the cow" loading="lazy" style="direction: ltr;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Signals -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <h2>Quality You Can Trust</h2>
+        <p>Don't just take our word for it — here's the proof.</p>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <img src="images/newspaper_article.jpg" alt="Newspaper article about Paimpaal farm" loading="lazy" data-lightbox>
+          <p>Featured in local press</p>
+        </div>
+        <div class="trust-card">
+          <img src="images/lab_report1.jpg" alt="Lab quality report for Paimpaal products" loading="lazy" data-lightbox>
+          <p>Lab-tested quality report</p>
+        </div>
+        <div class="trust-card">
+          <img src="images/lab_report2.jpg" alt="Second lab quality report" loading="lazy" data-lightbox>
+          <p>Lab-tested quality report</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Friends / Community -->
+  <section>
+    <div class="container">
+      <div class="about-intro">
+        <div>
+          <h2>Farm Life</h2>
+          <p class="mt-1">Paimpaal isn't just a farm — it's a community. Friends, family, and visitors come together here to enjoy good food, fresh air, and the simple joys of farm life.</p>
+          <p class="mt-1">Whether you're here to pick up fresh produce or stay for a weekend, you're always welcome.</p>
+          <a href="farmstay.html" class="btn btn--primary mt-2" style="display: inline-flex;">Visit the Farmstay</a>
+        </div>
+        <img src="images/friends.jpeg" alt="Friends at Paimpaal farm" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Get in touch</h2>
+        <p>Have a question about the farm or our products? We'd love to hear from you.</p>
+        <button class="btn btn--whatsapp" onclick="openWhatsApp('', 'Hi! I\'d like to know more about Paimpaal.')">Chat on WhatsApp</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox__close" aria-label="Close">&times;</button>
+    <img src="" alt="">
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__contact">
+        <strong>Paimpaal Farm</strong>
+        <span>Location TBD</span>
+        <a href="#" onclick="openWhatsApp('', 'Hi! I have a question about Paimpaal.'); return false;">WhatsApp Us</a>
+      </div>
+      <div class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="farmstay.html">Farmstay</a>
+        <a href="about.html">About</a>
+      </div>
+      <div class="footer__copy">
+        &copy; 2026 Paimpaal. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
