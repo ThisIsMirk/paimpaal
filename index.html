@@ -7,7 +7,7 @@
   <title>Paimpaal — Farm Fresh Products & Farmstay</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -33,90 +33,98 @@
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero --> 
   <section style="padding-top: 1.5rem;">
     <div class="container">
       <div class="hero">
         <div class="hero__content">
           <h1>From Our Farm To Your Home</h1>
-          <p>Dairy, produce, fruits, spices — and a farmstay with views you won't forget.</p>
+          <p>Dairy, vegetables, fruits, spices — and a farmstay with views you won't forget.</p>
           <div style="display: flex; gap: 0.75rem; justify-content: center;">
             <a href="products.html" class="btn btn--primary btn--sm">Our Products</a>
             <a href="farmstay.html" class="btn btn--outline btn--sm">Stay With Us!</a>
           </div>
         </div>
-        <img src="images/cow1.jpg" alt="Cow" class="hero__bg" loading="eager">
+        <img src="images/cow2.jpg" alt="Cow" class="hero__bg" loading="eager">
       </div>
     </div>
   </section>
 
-  <!-- Quick Links -->
+  <!-- Product Scroll -->
+  <section class="product-scroll-section">
+    <div class="scroll-row">
+      <div class="scroll-card">
+        <img src="images/milk.jpg" alt="Fresh milk" loading="lazy">
+        <h3>Milk</h3>
+        <p>Fresh cow's milk, delivered daily.</p>
+      </div>
+      <div class="scroll-card">
+        <img src="images/ghee.jpg" alt="Pure ghee" loading="lazy">
+        <h3>Ghee</h3>
+        <p>Pure, homemade cow's milk ghee.</p>
+      </div>
+      <div class="scroll-card">
+        <img src="images/black_pepper.jpeg" alt="Black pepper" loading="lazy">
+        <h3>Black Pepper</h3>
+        <p>Sun-dried, aromatic black pepper.</p>
+      </div>
+      <div class="scroll-card">
+        <img src="images/cardamom.jpeg" alt="Cardamom" loading="lazy">
+        <h3>Cardamom</h3>
+        <p>Fragrant, green cardamom pods.</p>
+      </div>
+      <div class="scroll-card">
+        <img src="images/avocado.jpg" alt="Avocados" loading="lazy">
+        <h3>Avocado</h3>
+        <p>Farm-grown, hand-picked avocados.</p>
+      </div>
+      <div class="scroll-card">
+        <img src="images/rambutan.jpg" alt="Rambutan" loading="lazy">
+        <h3>Rambutan</h3>
+        <p>Exotic, sweet rambutan fruit.</p>
+      </div>
+      <div class="scroll-card">
+        <img src="images/guava.jpg" alt="Guava" loading="lazy">
+        <h3>Guava</h3>
+        <p>Fragrant, hand-picked guavas.</p>
+      </div>
+    </div>
+    <div class="text-center" style="padding: 1.5rem 0 0;">
+      <a href="products.html" class="btn btn--outline">View All Products</a>
+    </div>
+  </section>
+
+  <!-- Farmstay -->
   <section>
     <div class="container">
-      <div class="quick-links">
-        <a href="products.html" class="quick-link">
-          <img src="images/milk.jpg" alt="Farm products" loading="lazy">
-          <div class="quick-link__overlay">
-            <h3>Farm Products</h3>
-            <p>Dairy, produce, fruits & spices — straight from the farm.</p>
-            <span class="btn btn--primary btn--sm">Browse Products</span>
-          </div>
-        </a>
-        <a href="farmstay.html" class="quick-link">
-          <img src="images/tent_scenery.jpeg" alt="Farmstay with scenic views" loading="lazy">
-          <div class="quick-link__overlay">
-            <h3>Farmstay</h3>
-            <p>A hilltop cottage and tent with stunning sunset views.</p>
-            <span class="btn btn--primary btn--sm">Learn More</span>
-          </div>
-        </a>
-      </div>
+      <a href="farmstay.html" class="quick-link">
+        <img src="images/cottage_indoor.jpg" alt="Farmstay cottage interior" loading="lazy">
+        <div class="quick-link__overlay">
+          <h3>Farmstay</h3>
+          <p>A hilltop cottage and tent with stunning sunset views.</p>
+          <span class="btn btn--primary btn--sm">Learn More</span>
+        </div>
+      </a>
     </div>
   </section>
 
-  <!-- Featured Products -->
+  <!-- Map -->
   <section>
     <div class="container">
       <div class="section-header">
-        <h2>From Our Farm</h2>
-        <p>A taste of what we grow and make at Paimpaal.</p>
+        <h2>Find Us</h2>
       </div>
-      <div class="featured-grid">
-        <div class="card">
-          <img src="images/ghee.jpg" alt="Fresh ghee" class="card__img" loading="lazy">
-          <div class="card__body">
-            <h3>Ghee</h3>
-            <p>Pure, homemade cow's milk ghee.</p>
-            <button class="btn btn--whatsapp btn--sm" onclick="openWhatsApp('Ghee')">Order on WhatsApp</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/avocado.jpg" alt="Fresh avocados" class="card__img" loading="lazy">
-          <div class="card__body">
-            <h3>Avocado</h3>
-            <p>Farm-grown, hand-picked avocados.</p>
-            <button class="btn btn--whatsapp btn--sm" onclick="openWhatsApp('Avocados')">Order on WhatsApp</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/black_pepper.jpeg" alt="Black pepper" class="card__img" loading="lazy">
-          <div class="card__body">
-            <h3>Black Pepper</h3>
-            <p>Sun-dried, aromatic black pepper.</p>
-            <button class="btn btn--whatsapp btn--sm" onclick="openWhatsApp('Black Pepper')">Order on WhatsApp</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/eggs.jpg" alt="Fresh eggs" class="card__img" loading="lazy">
-          <div class="card__body">
-            <h3>Eggs</h3>
-            <p>Free-range farm-fresh eggs.</p>
-            <button class="btn btn--whatsapp btn--sm" onclick="openWhatsApp('Eggs')">Order on WhatsApp</button>
-          </div>
-        </div>
-      </div>
-      <div class="text-center mt-2">
-        <a href="products.html" class="btn btn--outline-green">View All Products</a>
+      <div class="map-embed">
+        <!-- TODO: Replace with actual farm coordinates/place ID -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50000!2d76.0!3d11.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDM2JzAwLjAiTiA3NsKwMDAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+          width="100%"
+          height="350"
+          style="border:0; border-radius: 12px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </div>
   </section>
